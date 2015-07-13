@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.rundeck.RundeckNotifier_-RundeckDescriptor plugin="rundeck@3.4">
+  <rundeckInstance>
+    <url>http://repo.livepaperapi.com:4440</url>
+    <apiVersion>12</apiVersion>
+    <login>admin</login>
+    <password>admin</password>
+  </rundeckInstance>
+</org.jenkinsci.plugins.rundeck.RundeckNotifier_-RundeckDescriptor>

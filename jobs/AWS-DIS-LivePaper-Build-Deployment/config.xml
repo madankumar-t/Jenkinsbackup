@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo &quot; started build setup &quot;
+sleep 5 
+
+echo &quot;completed &quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <org.jenkinsci.plugins.rundeck.RundeckNotifier plugin="rundeck@3.4">
+      <jobId>f03c2b2f-6f14-47f9-b818-d2e5a8c284cc</jobId>
+      <options></options>
+      <nodeFilters></nodeFilters>
+      <tag></tag>
+      <shouldWaitForRundeckJob>true</shouldWaitForRundeckJob>
+      <shouldFailTheBuild>false</shouldFailTheBuild>
+      <includeRundeckLogs>true</includeRundeckLogs>
+    </org.jenkinsci.plugins.rundeck.RundeckNotifier>
+  </publishers>
+  <buildWrappers/>
+</project>
